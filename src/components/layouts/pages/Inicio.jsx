@@ -3,6 +3,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Foother from '../interfaz/Foother'
 import Header from '../interfaz/Header'
+import bacteria from '../../../assets/img/inicio-bacteria.jpg'
+import arquea from '../../../assets/img/inicio-eucariota.jpg'
+import eucariota from '../../../assets/img/inicio-arquea.jpg'
+
 const Inicio = () => {   // el inicio es la pagina que le sigue a la de la portada cuyo proposito es dar informacion sobre el contenido
   const [mostrarInfo,SetmostrarInfo]=useState(false)
   const handleToggle=()=>{   // hace que al dar click al boton saque un texto y al darle click otr avez lo coculta
@@ -21,19 +25,19 @@ const Inicio = () => {   // el inicio es la pagina que le sigue a la de la porta
           <section id='contenedor-dominios'>
     <Link className="link-dominio" to={"/dominio-bacteria"}>
         <div className="contenedor-imagen">
-            <img className='img-dominio' src="https://plustatic.com/2172/conversions/reino-bacteria-large.jpg" alt="Bacteria" />
+            <img className='img-dominio' src={bacteria} alt="Bacteria" />
             <p className='img-texto'>Bacteria</p>
         </div>
     </Link>
     <Link className="link-dominio">
         <div className="contenedor-imagen">
-            <img className='img-dominio' src="https://www.thoughtco.com/thmb/uqeJTnECv0oe8pdLU_TnnumHN9E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/water_bear-5c2fbcf34cedfd0001e826fc.jpg" alt="Arkea" />
+            <img className='img-dominio' src={eucariota} alt="Arkea" />
             <p className='img-texto'>Arkea</p>
         </div>
     </Link>
     <Link className="link-dominio">
         <div className="contenedor-imagen">
-            <img className='img-dominio' src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Plagiomnium_affine_laminazellen.jpeg/240px-Plagiomnium_affine_laminazellen.jpeg" alt="Eukarya" />
+            <img className='img-dominio' src={arquea} alt="Eukarya" />
             <p className='img-texto'>Eukarya</p>
         </div>
     </Link>
