@@ -2,6 +2,7 @@ import { createBrowserRouter,RouterProvider } from "react-router-dom"
 import Inicio from "./components/layouts/pages/Inicio"
 import Portada from "./components/layouts//pages/Portada"
 import Bacteria from "./components/layouts/pages/Bacteria";
+import Arkea from "./components/layouts/pages/Arkea";
   let router= createBrowserRouter([
 {
   path:"/",
@@ -12,8 +13,12 @@ import Bacteria from "./components/layouts/pages/Bacteria";
   element:<Inicio></Inicio>,
 },
 {
-  path:"dominio-bacteria",
+  path:"/dominio-bacteria",
   element:<Bacteria></Bacteria>
+},
+{
+path:"/dominio-arkea",
+element: <Arkea></Arkea>
 }
   ])
   function App() {

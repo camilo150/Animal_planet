@@ -1,146 +1,31 @@
-*{
+/* Elimina márgenes por defecto */
+* {
   margin: 0;
-  background: none;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
-#foother{            /*INICIO FOOTHER*/
-  display: flex;
-  width: 100%;
-  height: 3.4rem;
-  justify-content: space-evenly;
-  flex-direction: row;
-  position:relative;
-  top: 100%;
-  background-color: black;
-  margin-top: 4%;
-}
-.foother-iconos{
-  height: 40px;
-  position: relative;
-  top: 17%;
-  border-radius: 10%;
-}                            /*FIN FOOTHER*/
 
-.portada-body{              /*INICIO PORTADA*/
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-}
-.a{
-  display: flex;
-  position:fixed;
-  top: 30.9%;
-  left: 41.4%;
-  height: 38%;
-  width: 11%;
-  border: solid 1.5rem rgb(218, 181, 20);
-  background-color: rgb(0, 0, 0);
-  cursor: pointer;
-}
-.a:hover{
-  background-image: url("src/assets/img/ojo_leon.jpg");
-  background-size: cover;
-}                               /*FIN PORTADA*/
-
-#inicio-body{                  /*INICIO INICIO*/ 
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(0deg, #fd7e14 5%, #ffd43b 95%);
-}
-#inicio-icono-national{
-  position:relative;
-  left: 49%;
-  top: 0.3rem;
-  height: 35px;
-  width: 1.6%;
-  border: solid 0.3rem #fc0;
-}
-.inicio-anuncio{
-  font-family: "Nunito",sans-serif;
-  text-align: center;
-}
-#inicio-informacion-dominio{
+.informacion-dominio{
+  width: 84vw;
   border: none;
-  font-family: "Nunito",sans-serif;
+  font-family: "Nunito", sans-serif;
   position: relative;
-  left:0%;
-  width: 100%;
-  background-color: black;
+  left: 9.9vw;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  margin-top: 5%;
-  font-size:large;
+  margin-top: 6%;
+  font-size: large;
   cursor: pointer;
 }
-#contenedor-dominios {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 5%;
+.caracteristica{
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.808);
 }
-.contenedor-imagen {
-  position: relative;
-  left: -2vw;
-  width: 280px;
-  height: 280px;
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out;
-}
-.contenedor-imagen:hover {
-  transform: scale(1.1);
-}
-.img-dominio {
-  height: 45vh;
-  width: 26vw;
-  border-radius: 20px;
-  object-fit: cover; 
-  transition:  0.2s ease-in-out;
-}
-.img-texto {
-  position: absolute;
-  top: 23.5vh;
-  left: 13vw;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 238, 0);
-  font-family: "Nunito",sans-serif;
-  font-size: x-large;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-  width: 100%;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-}
-
-.contenedor-imagen:hover .img-texto {
-  opacity: 1; 
-}                               /* FIN INICIO */
-
-.bacteria-body{              /* INICIO BACTERIA */
-  background-image: linear-gradient(180deg, #40c057 39%, #198320 100%);
-  height: 100%;
-  width: 100%;
-}
-.bacteria-anuncio{
-  font-family: "Nunito",sans-serif;
-  text-align: center;
-  font-size:1.5rem;
-  margin-top: 2.5%;
-}
-#bacteria-boton-saberMas{
-  background: none;
-  border: none;
-  color: gainsboro;
-  background-color: black;
-  font-size: 1.2rem;
-  text-align: initial;
-  width: 100%;
-  margin-top: 2.5%;
-}
-.bacteria-texto-saberMas{
-  letter-spacing: 1px; /* Ajusta el valor según sea necesario */
-  /* Espaciado entre palabras */
+.texto-saberMas{
   word-spacing: 1px; /* Ajusta el valor según sea necesario */
   /* Espaciado entre líneas de texto */
   line-height: 2; /* Ajusta el valor según sea necesario */
   font-size: 0.8rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
