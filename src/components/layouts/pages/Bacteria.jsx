@@ -25,13 +25,13 @@ const Bacteria = () => {
       <section className='contenedor-reino' >
         {dominioBacteria.reinos.map((reino, idxReino) => (
           <section key={idxReino} >
-            <h1 className='reino-nombre'>{reino.reino}</h1>
+            <h1 className='reino-nombreA'>{reino.reino}</h1>
             <section className='contenedor-seresVivos'>
               {reino.seresVivos.map((ser, idxSer) => (
-                <section className='serVivo' key={idxSer}>
-                  <h1 className='servivo-nombre' >{ser.nombre}</h1>
-                  <img className='imagen-serVivo' src={ser.imagen} alt="foto del ser vivo" />
-                  <h4 className='servivo-descripcion' >{ser.descripcion}</h4>
+                <section className='serVivoA' key={idxSer}>
+                  <h1 className='servivo-nombreA' >{ser.nombre}</h1>
+                  <img className='imagen-serVivoA' src={ser.imagen} alt="foto del ser vivo" />
+                  <h4 className='servivo-descripcionA' >{ser.descripcion}</h4>
                 </section>
               ))}
             </section>
