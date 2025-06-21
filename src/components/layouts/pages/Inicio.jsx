@@ -7,10 +7,9 @@ import arkea from '../../../assets/img/inicio-arquea.jpg'
 import eucariota from '../../../assets/img/inicio-eucariota.jpg'
 
 
-const Inicio = () => { 
+const Inicio = () => {
     return (
-        <>
-            <section className='inicio-body'>
+        <div className='inicio-body'>
                 <Header></Header>
                 <h1 className='inicio-anuncio'>¡bienvenido a una experiencia de mucho conocimiento en animal planet!</h1>
                 <h1 className='inicio-anuncio'>pero para ello primero escoje el dominio sobre el cual quieres conocer</h1>
@@ -20,27 +19,25 @@ const Inicio = () => {
                 </details>
                 <section className='contenedor-dominios'>
                     <Link className="link-dominio" to={"/dominio-bacteria"}>
-                        <div className="contenedor-imagen">
-                            <img className='img-dominio' src={bacteria} alt="Bacteria" />
-                            <p className='img-texto'>Bacteria</p>
+                        <div className="contenedor-imagen-dominios">
+                            <img className='img-dominios' src={bacteria} alt="Bacteria" />
+                            <p className='img-texto-dominios'>Bacteria</p>
                         </div>
                     </Link>
                     <Link className="link-dominio" to={"/dominio-arkea"}>
-                        <div className="contenedor-imagen">
-                            <img className='img-dominio' src={arkea} alt="Arkea" />
-                            <p className='img-texto'>Arkea</p>
+                        <div className="contenedor-imagen-dominios">
+                            <img className='img-dominios' src={arkea} alt="Arkea" />
+                            <p className='img-texto-dominios'>Arkea</p>
                         </div>
                     </Link>
-                    <Link className="link-dominio">
-                        <div className="contenedor-imagen">
-                            <img className='img-dominio' src={eucariota} alt="Eukarya" />
-                            <p className='img-texto'>Eukarya</p>
+                    <Link className="link-dominio" to={"/dominio-eukarya"}>
+                        <div className="contenedor-imagen-dominios">
+                            <img className='img-dominios' src={eucariota} alt="Eukarya" />
+                            <p className='img-texto-dominios'>Eukarya</p>
                         </div>
                     </Link>
                 </section>
-
-            </section>
-        </>
+        </div>
     )
 }
 export default Inicio

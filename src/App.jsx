@@ -3,6 +3,9 @@ import Inicio from "./components/layouts/pages/Inicio"
 import Portada from "./components/layouts//pages/Portada"
 import Bacteria from "./components/layouts/pages/Bacteria";
 import Arkea from "./components/layouts/pages/Arkea";
+import Eukarya from "./components/layouts/pages/eukarya";
+import Plantae from "./components/layouts/pages/Plantae";
+import Fungi from "./components/layouts/pages/Fungi";
   let router= createBrowserRouter([
 {
   path:"/",
@@ -19,6 +22,18 @@ import Arkea from "./components/layouts/pages/Arkea";
 {
 path:"/dominio-arkea",
 element: <Arkea></Arkea>
+},
+{
+  path:"/dominio-eukarya",
+  element:<Eukarya></Eukarya>
+},
+{
+  path:"/Plantae",
+  element:<Plantae></Plantae>
+},
+{
+  path:"/fungi",
+  element:<Fungi></Fungi>
 }
   ])
   function App() {

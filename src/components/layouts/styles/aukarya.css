@@ -1,0 +1,61 @@
+.eukarya-body {
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(0deg, #128396 0%, #284CAa 100%);
+    background-attachment: fixed;
+    color: white;
+
+}
+
+.contenedor-reinos {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 0.1rem;
+    margin-top: 5%;
+}
+
+.link-dominio-eukarya {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+.contenedor-imagen-reino {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contenedor-imagen-reino:hover {
+    transform: scale(1.04);
+}
+
+.img-reino {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+}
+
+.img-texto-reino {
+    position: absolute;
+    top: 26.5vh;
+    left: 0vw;
+    color: rgb(0, 0, 0);
+    font-family: "Nunito", sans-serif;
+    font-size: x-large;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.contenedor-imagen-reino:hover .img-texto-reino {
+    opacity: 1;
+}

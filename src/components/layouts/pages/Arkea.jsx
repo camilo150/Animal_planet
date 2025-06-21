@@ -8,7 +8,7 @@ const Arkea = () => {
   return (
     <div className='arkea-fondo'>
       <Header></Header>
-      <h1 className='arkea-anuncio'>Las arqueas son microorganismos unicelulares similares a las bacterias, pero con características bioquímicas y genéticas únicas que las hacen muy distintas.</h1>
+      <h1 className='dominio-anuncio'>Las arqueas son microorganismos unicelulares similares a las bacterias, pero con características bioquímicas y genéticas únicas que las hacen muy distintas.</h1>
     <details className='informacion-dominio' >
       <summary>
         Quiero saber más sobre este dominio</summary>
@@ -23,8 +23,8 @@ const Arkea = () => {
           <section className='contenedor-seresVivos'> 
             {reino.seresVivos.map((ser,idxSer)=>(
               <section className='serVivoB' key={idxSer}>
-              <h1 className='servivo-nombreB'>{ser.nombre}</h1>
-              <img className='imagen-serVivoB' src={ser.imagen} alt="" />
+              <h1 className='servivo-nombre'>{ser.nombre}</h1>
+              <img className='imagen-serVivo' src={ser.imagen} alt="" />
               <h4 className='servivo-descripcionB' >{ser.descripcion}</h4>
               </section>
             ))}

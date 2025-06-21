@@ -10,7 +10,7 @@ const Bacteria = () => {
   return (
     <div className='bacteria-body'>
       <Header></Header>
-      <h1 className='bacteria-anuncio'>El dominio Bacteria agrupa a los organismos vivos unicelulares que generalmente son de tamaño microscópico.</h1>
+      <h1 className='dominio-anuncio'>El dominio Bacteria agrupa a los organismos vivos unicelulares que generalmente son de tamaño microscópico.</h1>
       <details className='informacion-dominio'>
         <summary>Quiero saber mas sobre este dominio</summary>
         <p className='texto-saberMas'><span className='caracteristica'>Estructura Celular </span>: Las bacterias son organismos procariotas, lo que significa que sus células no tienen un núcleo definido ni organelos membranosos como las mitocondrias o el retículo endoplásmico. Su material genético, generalmente en forma de una molécula circular de ADN, se encuentra en una región de la célula llamada nucleoide.
@@ -29,8 +29,8 @@ const Bacteria = () => {
             <section className='contenedor-seresVivos'>
               {reino.seresVivos.map((ser, idxSer) => (
                 <section className='serVivoA' key={idxSer}>
-                  <h1 className='servivo-nombreA' >{ser.nombre}</h1>
-                  <img className='imagen-serVivoA' src={ser.imagen} alt="foto del ser vivo" />
+                  <h1 className='servivo-nombre' >{ser.nombre}</h1>
+                  <img className='imagen-serVivo' src={ser.imagen} alt="foto del ser vivo" />
                   <h4 className='servivo-descripcionA' >{ser.descripcion}</h4>
                 </section>
               ))}
