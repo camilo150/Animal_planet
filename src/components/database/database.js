@@ -41,6 +41,30 @@ import Stem_rust from "../../assets/img/hongos/Stem_rust_close_up.jpg"
 import Suillus from "../../assets/img/hongos/suillus-luteus.jpg"
 import Usnea from "../../assets/img/hongos/Usnea_barbata.jpg"
 import Xanthoria from "../../assets/img/hongos/Xanthoria parietina.jpg"
+import pinguino from "../../assets/img/animales/pinguino.avif"
+import Morsa from "../../assets/img/animales/Morsa.webp"
+import Amoeba from "../../assets/img/protistas/Amoeba_proteus.jpg"
+import Entamoeba from "../../assets/img/protistas/Entamoeba histolytica.jpg"
+import Naegleria from "../../assets/img/protistas/Naegleria fowleri.webp"
+import Paramecium from "../../assets/img/protistas/Paramecium_caudatum.jpg"
+import Blepharisma from "../../assets/img/protistas/Blepharisma japonicum.jpg"
+import Vorticella from "../../assets/img/protistas/Vorticella campanula.jpeg"
+import Trypanosoma from "../../assets/img/protistas/Trypanosoma_brucei.jpg"
+import Euglena from "../../assets/img/protistas/Euglena_gracilis.jpeg"
+import Giardia from "../../assets/img/protistas/Giardia lamblia.jpg"
+import Coscinodiscus from "../../assets/img/chromistas/Coscinodiscus.jpeg"
+import Navicula from "../../assets/img/chromistas/Navicula.jpg"
+import Thalassiosira from "../../assets/img/chromistas/Thalassiosira.jpg"
+import Pythium from "../../assets/img/chromistas/Pythium ultimum.jpg"
+import Phytophthora from "../../assets/img/chromistas/Phytophthora.jpg"
+import Saprolegnia from "../../assets/img/chromistas/Saprolegnia parasitica.jpg"
+import Macrocystis from "../../assets/img/chromistas/Macrocystis pyrifera.jpg"
+import Sargassum from "../../assets/img/chromistas/Sargassum natans.jpg"
+import Fucus from "../../assets/img/chromistas/Fucus vesiculosus.jpeg"
+
+
+
+
 
 const biodiversidad = [
     {
@@ -194,6 +218,18 @@ const biodiversidad = [
                         imagen: Ornitorrinco
                     },
                     {
+                        nombre: "Pingüino",
+                        tipo: "semiacuático",
+                        descripcion: "Es conocido principalmente por el singular ciclo reproductivo de los adultos que repiten cada año, un largo viaje para aparearse y para alimentar a sus crías realizando caminatas de entre cincuenta y ciento veinte kilómetros. Es la única especie de pingüino que se reproduce durante el crudo invierno antártico",
+                        imagen: pinguino
+                    },
+                    {
+                        nombre: "Morsa",
+                        tipo: "semiacuático",
+                        descripcion: "El enigma viviente. Mamífero que pone huevos, tiene pico de pato, veneno en sus patas y caza con electrolocalización. Un rompecabezas evolutivo que desafía la clasificación.",
+                        imagen: Morsa
+                    },
+                    {
                         nombre: "Ballena",
                         tipo: "acuático",
                         descripcion: "El gigante del planeta. Canta con frecuencias inaudibles para el ser humano, viaja miles de kilómetros y mantiene el ciclo del carbono marino. Su presencia es monumental y casi mitológica.",
@@ -273,7 +309,7 @@ const biodiversidad = [
                 ]
             },
             {
-                reino:'Fungi',
+                reino: 'Fungi',
                 seresVivos: [
                     {
                         nombre: "Armillaria ostoyae",
@@ -349,9 +385,160 @@ const biodiversidad = [
                     }
                 ]
 
+            },
+            {
+                reino: "Protista",
+                seresVivos: [
+                    {
+                        classe: "Protozoos",
+                        A: [
+                            {
+                                clase: "Protozoos",
+                                nombre: "Amoeba proteus",
+                                tipo: "Protozoo",
+                                descripcion: "Un ingeniero de microcosmos. Con su forma cambiante y pseudópodos, captura presas y se adapta a su entorno. Un símbolo de la flexibilidad celular.",
+                                imagen: Amoeba
+                            },
+                            {
+                                nombre: "Entamoeba histolytica",
+                                tipo: "Protozoo",
+                                descripcion: "Un viajero microscópico. Con su forma ameboide, se desplaza por su entorno en busca de alimento.",
+                                imagen: Entamoeba
+                            },
+                            {
+                                nombre: "Naegleria fowleri",
+                                tipo: "Protozoo",
+                                descripcion: "El cazador de agua dulce. Con su forma ameboide, se desplaza por su entorno en busca de alimento. Un viajero microscópico que puede ser mortal.",
+                                imagen: Naegleria
+                            }
+                        ]
+                    },
+                    {
+                        classe: "Ciliados",
+                        A: [
+                            {
+                                nombre: "Paramecium caudatum",
+                                tipo: "Ciliado",
+                                descripcion: "El nadador ciliado. Con sus miles de cilios, se desplaza con gracia por el agua, alimentándose de bacterias y algas. Un ballet microscópico en acción.",
+                                imagen: Paramecium
+                            },
+                            {
+                                nombre: "blepharisma japonicum",
+                                tipo: "Ciliado",
+                                descripcion: "Un ciliado de forma alargada y colorida, que se desplaza por el agua con sus cilios. Se alimenta de bacterias y otros microorganismos.",
+                                imagen: Blepharisma
+                            },
+                            {
+                                nombre: "vorticella campanula",
+                                tipo: "Ciliado",
+                                descripcion: "Un ciliado con forma de campana que se adhiere a superficies acuáticas. Con sus cilios, crea corrientes de agua para capturar partículas de alimento.",
+                                imagen: Vorticella
+                            },
+                        ]
+                    },
+                    {
+                        classe: "Flagelados",
+                        A: [
+                            {
+                                nombre: "Euglena gracilis",
+                                tipo: "Flagelado",
+                                descripcion: "El híbrido verde. Con cloroplastos para fotosíntesis y flagelos para nadar, es un puente entre plantas y animales. Un ejemplo de adaptabilidad evolutiva.",
+                                imagen: Euglena
+                            },
+                            {
+                                nombre: "Trypanosoma brucei",
+                                tipo: "Flagelado",
+                                descripcion: "El parásito del sueño. Con su forma alargada y flagelos, se desplaza en fluidos corporales y puede causar enfermedades graves en humanos y animales.",
+                                imagen: Trypanosoma
+                            },
+                            {
+                                nombre: "giardia lamblia",
+                                tipo: "Flagelado",
+                                descripcion: "El parásito intestinal. Con su forma de pera y flagelos, se adhiere a las paredes intestinales y puede causar enfermedades gastrointestinales.",
+                                imagen: Giardia
+                            }
+
+                        ]
+                    }
+                ]
+            },
+            {
+                reino: "Chromista",
+                seresVivos: [
+                    {
+                        classe: "Diatomeas",
+                        A: [
+                            {
+                                nombre: "Coscinodiscus",
+                                tipo: "Diatomea",
+                                descripcion: "Un mosaico de silicio. Con su estructura de vidrio, forma patrones geométricos únicos. Un microarquitecto del océano.",
+                                imagen: Coscinodiscus
+                            },
+                            {
+                                nombre: "Navicula",
+                                tipo: "Diatomea",
+                                descripcion: "Un barco de silicio. Con su forma alargada y simétrica, navega por las aguas dulces y saladas, creando belleza microscópica.",
+                                imagen: Navicula
+                            },
+                            {
+                                nombre: "Thalassiosira",
+                                tipo: "Diatomea",
+                                descripcion: "Un faro de luz. Con sus estructuras radiadas, refleja la luz del sol y crea patrones brillantes en el agua.",
+                                imagen: Thalassiosira
+                            }
+                        ]
+                    },
+                    {
+                        classe: "Oomycetes",
+                        A: [
+                            {
+                                nombre: "Pythium ultimum",
+                                tipo: "Oomycete",
+                                descripcion: "El destructor de raíces. Con sus hifas filamentosas, invade raíces de plantas y causa enfermedades devastadoras en cultivos.",
+                                imagen: Pythium
+                            },
+                            {
+                                nombre: "Phytophthora infestans",
+                                tipo: "Oomycete",
+                                descripcion: "El enemigo del tomate. Con sus esporas, infecta cultivos de tomate y papa, causando pérdidas masivas en la agricultura.",
+                                imagen: Phytophthora
+                            },
+                            {
+                                nombre: "Saprolegnia parasitica",
+                                tipo: "Oomycete",
+                                descripcion: "El parásito acuático. Con sus hifas filamentosas, infecta peces y otros organismos acuáticos, causando enfermedades graves.",
+                                imagen: Saprolegnia
+                            }
+                        ]
+                    },
+                    {
+                        classe: "Algas pardas",
+                        A: [
+                            {
+                                nombre: "Macrocystis pyrifera",
+                                tipo: "Alga parda",
+                                descripcion: "La selva marina gigante. Con sus largas frondas, forma bosques submarinos que albergan una rica biodiversidad.",
+                                imagen: Macrocystis
+                            },
+                            {
+                                nombre: "Fucus vesiculosus",
+                                tipo: "Alga parda",
+                                descripcion: "El fucus burbujeante. Con sus vesículas de gas, flota en la superficie del agua y forma hábitats para diversas especies.",
+                                imagen: Fucus
+                            },
+                            {
+                                nombre: "Sargassum muticum",
+                                tipo: "Alga parda",
+                                descripcion: "El sargazo invasor. Con sus largas frondas y flotadores, forma extensas masas en la superficie del agua, afectando ecosistemas costeros.",
+                                imagen: Sargassum
+                            }
+
+                        ]
+                    }
+                ]
             }
         ]
     }
-];
+]
 
-export default biodiversidad
+    export default biodiversidad

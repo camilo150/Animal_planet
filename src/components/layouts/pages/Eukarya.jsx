@@ -24,9 +24,9 @@ const Eukarya = () => {
             <section className='contenedor-reinos'>
                 <Link to={"/Plantae"} className="link-dominio-eukarya"><div className="contenedor-imagen-reino"><img src={Plantae} alt="" className="img-reino" /> <p className="img-texto-reino">Plantae</p></div></Link>
                 <Link to={"/Fungi"} className="link-dominio-eukarya"><div className="contenedor-imagen-reino"><img src={Fungi} alt="" className="img-reino" /> <p className="img-texto-reino">Fungi</p></div></Link>
-                <Link to={"google.com"} className="link-dominio-eukarya"><div className="contenedor-imagen-reino"><img src={Animalia} alt="" className="img-reino" /> <p className="img-texto-reino">Animalia</p></div></Link>
-                <Link to={"google.com"} className="link-dominio-eukarya"><div className="contenedor-imagen-reino"><img src={Protista} alt="" className="img-reino" /> <p className="img-texto-reino">Protista</p></div></Link>
-                <Link to={"google.com"} className="link-dominio-eukarya"><div className="contenedor-imagen-reino"><img src={Chromista} alt="" className="img-reino" /> <p className="img-texto-reino">Chromista</p></div></Link>
+                <Link to={"/animalia"} className="link-dominio-eukarya"><div className="contenedor-imagen-reino"><img src={Animalia} alt="" className="img-reino" /> <p className="img-texto-reino">Animalia</p></div></Link>
+                <Link to={"/protista"} className="link-dominio-eukarya"><div className="contenedor-imagen-reino"><img src={Protista} alt="" className="img-reino" /> <p className="img-texto-reino">Protista</p></div></Link>
+                <Link to={"/chromista"} className="link-dominio-eukarya"><div className="contenedor-imagen-reino"><img src={Chromista} alt="" className="img-reino" /> <p className="img-texto-reino">Chromista</p></div></Link>
             </section>
         </div>
     )

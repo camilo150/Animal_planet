@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from "../interfaz/Header"
 import "./../styles/bacteria.css"
 import biodiversidad from '../../database/database'
