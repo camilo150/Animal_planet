@@ -3,7 +3,7 @@ import Inicio from "./components/layouts/pages/Inicio"
 import Portada from "./components/layouts//pages/Portada"
 import Bacteria from "./components/layouts/pages/Bacteria";
 import Arkea from "./components/layouts/pages/Arkea";
-import Eukarya from "./components/layouts/pages/eukarya";
+import Eukarya from "./components/layouts/pages/Eukarya";
 import Plantae from "./components/layouts/pages/Plantae";
 import Fungi from "./components/layouts/pages/Fungi";
 import Animalia from  "./components/layouts/pages/Animalia.jsx";
