@@ -3,7 +3,7 @@ import Header from "../interfaz/Header"
 import "./../styles/Plantae.css"
 import biodiversidad from '../../database/database'
 
-const Bacteria = () => {
+const Plantae = () => {
 
     const especimenesPlantae = biodiversidad
         .flatMap(dominio => dominio.reinos)               // extrae todos los reinos de todos los dominios
@@ -40,4 +40,4 @@ const Bacteria = () => {
     )
 }
 
-export default Bacteria
+export default Plantae;
