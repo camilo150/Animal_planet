@@ -17,7 +17,7 @@
     cursor: pointer;
   }
   .a:hover{
-    background-image: url("src/assets/img/ojo_leon.jpg");
+    background-image: url("./../../../assets/img/ojo_leon.jpg");
     background-size: cover;
   }                               /*FIN PORTADA*/
   
