@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from "../interfaz/Header"
-import "./../styles/plantae.css"
+import "./../styles/Plantae.css"
 import biodiversidad from '../../database/database'
 
 const Bacteria = () => {
